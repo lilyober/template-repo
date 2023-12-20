@@ -1,4 +1,4 @@
-import Blank from '../src/blank.js';
+import Class from '../src/blank.js';
 
 describe('function', () => {
 

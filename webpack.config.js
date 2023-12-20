@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // new line
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
@@ -9,14 +9,14 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devServer: { // new line
-        static: { // new line
-          directory: path.join(__dirname, "dist"), // new line
-        }, // new line
-      }, // new line 
+    devServer: { 
+        static: { 
+          directory: path.join(__dirname, "dist"), 
+        }, 
+      }, 
     plugins: [
-        new ESLintPlugin(), // new line!
-        new CleanWebpackPlugin(), // new line
+        new ESLintPlugin(),
+        new CleanWebpackPlugin(), 
         new HtmlWebpackPlugin({
             title: 'Shape Tracker',
             template: './src/index.html',
